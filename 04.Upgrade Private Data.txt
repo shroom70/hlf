@@ -1,3 +1,8 @@
+cp -P ~/fabric/fabric-samples/chaincode/marbles02_private 
+~/fabric/fabric-samples/chaincode/marbles03_private
+
+
+
 # install for upgrade
 export CORE_PEER_ADDRESS=peer0.org1.example.com:7051
 peer chaincode install -n marblesp -v 2.0 -p github.com/chaincode/marbles03_private/go/
