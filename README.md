@@ -9,8 +9,18 @@ $ vagrant init ubuntu1604
 $ vi Vagrantfile
   (15 line) config.vm.box = "ubuntu1604"
   (35 line) config.vm.network "private_network", ip: "192.168.33.10"
-  config.vm.provider
-  vb.memory -> 4096
+  (52 line) config.vm.provider
+  (57 line) vb.memory -> 4096
 $ vagrant up
 $ sudo timedtectl set-timezone Asia/Seoul
+</pre>
+
+* VirtualBox HDD 크기 변경
+<pre>
+$ cd "VirtualBox VMs"/<VBox image path>
+$ VBoxManage clonehd ubuntu-xenial-16.04-cloudimg.vmdk tmp-disk.vdi --format vdi
+$ VBoxManage modifyhd tmp-disk.vdi --resize 40960
+$ BoxManage clonehd tmp-disk.vdi ubuntu-xenial-16.04-cloudimgX.vmdk --format vmdk
+
+VirutalBox에서 이미지 변경
 </pre>
