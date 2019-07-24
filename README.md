@@ -22,7 +22,7 @@ $ vi Vagrantfile
   (add) vb.customize ["modifyvm", :id, "--cpus", 2]
   (add) vb.customize ["modifyvm", :id, "--memory", 4096]
 $ vagrant up
-$ sudo timedtectl set-timezone Asia/Seoul
+$ sudo timedatectl set-timezone Asia/Seoul
 </pre>
 
 * VirtualBox HDD 크기 변경
