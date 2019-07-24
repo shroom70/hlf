@@ -18,6 +18,9 @@ $ vi Vagrantfile
   (35 line) config.vm.network "private_network", ip: "192.168.33.10"
   (52 line) config.vm.provider
   (57 line) vb.memory -> 4096
+  (or)
+  (add) vb.customize ["modifyvm", :id, "--cpus", 2]
+  (add) vb.customize ["modifyvm", :id, "--memory", 4096]
 $ vagrant up
 $ sudo timedtectl set-timezone Asia/Seoul
 </pre>
