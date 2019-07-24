@@ -30,7 +30,7 @@ $ sudo timedatectl set-timezone Asia/Seoul
 $ cd "VirtualBox VMs"/<VBox image path>
 $ VBoxManage clonehd ubuntu-xenial-16.04-cloudimg.vmdk tmp-disk.vdi --format vdi
 $ VBoxManage modifyhd tmp-disk.vdi --resize 40960
-$ BoxManage clonehd tmp-disk.vdi ubuntu-xenial-16.04-cloudimgX.vmdk --format vmdk
+$ VBoxManage clonehd tmp-disk.vdi ubuntu-xenial-16.04-cloudimgX.vmdk --format vmdk
 
 VirutalBox에서 이미지 변경
 </pre>
