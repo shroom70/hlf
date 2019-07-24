@@ -1,5 +1,12 @@
 # hlf
 
+* 사전 설치 프로그램
+<pre>
+1. Visual Studio Code (https://code.visualstudio.com/)
+2. VirtualBox (https://www.virtualbox.org/)
+3. Vagrant (https://www.vagrantup.com/)
+</pre>
+
 * Vagrant로 설치 (ubuntu 1604)
 <pre>
 $ vagrant box add ubuntu1604 https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-vagrant.box
