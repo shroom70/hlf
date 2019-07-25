@@ -38,6 +38,7 @@ Ubuntu
 	$ sudo tar -xvf go1.10.linux-amd64.tar.gz
 	$ sudo mv go /usr/local
 	$ export GOROOT=/usr/local/go
+	$ export GOPATH=~/gowork
 	$ export PATH=$PATH:$GOROOT/bin:
 	$ go version (1.10 확인)
 	$ which go (확인 후 go의 설치 위치 다르면 다른 위치의 디렉토리 삭제)
