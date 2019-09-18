@@ -9,6 +9,8 @@
 
 * Vagrant로 설치 (ubuntu 1604)
 <pre>
+$ vagrant plugin install vagrant-vbguest 
+$ vagrant plugin install vagrant-disksize 
 $ vagrant box add ubuntu1604 https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-vagrant.box
 $ mkdir ~/works/vagrant/ubuntu1604
 $ cd ~/works/vagrant/ubuntu1604
