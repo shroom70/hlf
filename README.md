@@ -16,9 +16,9 @@ $ vagrant init ubuntu1604
 $ vi Vagrantfile
   (15 line) config.vm.box = "ubuntu1604"
   (16 line) config.disksize.size = '40GB'
-  (35 line) config.vm.network "private_network", ip: "192.168.33.10"
-  (52 line) config.vm.provider
-  (57 line) vb.memory -> 4096
+  (36 line) config.vm.network "private_network", ip: "192.168.33.10"
+  (53 line) config.vm.provider
+  (58 line) vb.memory = 4096
   (or)
   (add) vb.customize ["modifyvm", :id, "--cpus", 2]
   (add) vb.customize ["modifyvm", :id, "--memory", 4096]
